@@ -30,6 +30,15 @@ The location of the file depends on your OS:
 
 See all possible keys to overwrite in code: [here](https://github.com/extrawurst/gitui/blob/master/src/keys/key_list.rs#L83)
 
+For vim style bindings, we want
+- `h` -> `move_left`
+
+but *by default* 
+
+- `h` -> `open_help`
+
+So we override the key `open_help` to be bound to `F(1)`, otherwise `h` will open help instead.
+
 Here is a [vim style key config](vim_style_key_config.ron) with `h`, `j`, `k`, `l` to navigate. Use it to copy the content into `key_bindings.ron` to get vim style key bindings.
 
 # Key Symbols
